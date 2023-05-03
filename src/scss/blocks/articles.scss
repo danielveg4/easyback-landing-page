@@ -1,0 +1,63 @@
+@use "../mixins/responsive.scss" as *;
+@use "../mixins/pseudo.scss" as *;
+
+.titlearticles {
+  margin-top: -2rem;
+  padding: 4rem;
+  font-size: 2.5rem;
+  font-weight: normal;
+  text-align: center;
+  background-color: #fafafa;
+  color: #2d314d;
+
+  @include responsive(laptop) {
+    text-align: start;
+    padding-left: 11rem;
+  }
+}
+.articles {
+  background-color: #fafafa;
+  padding: 1rem;
+  margin-top: -3rem;
+  padding-bottom: 5rem;
+
+  @include responsive(laptop) {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+}
+.article {
+  background-color: white;
+  border-radius: 0.5rem;
+
+  &__image {
+    @include responsive(laptop) {
+      width: 255px;
+      height: 200px;
+    }
+  }
+  &__autor {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: #9597a5;
+    font-size: 0.9rem;
+  }
+  &__title {
+    margin-top: 0rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: #2d314d;
+    font-size: 1.4rem;
+    font-weight: normal;
+  }
+  &__text {
+    margin-top: -1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    color: #9597a5;
+  }
+}

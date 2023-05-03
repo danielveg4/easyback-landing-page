@@ -1,0 +1,64 @@
+@use "../mixins/responsive.scss" as *;
+@use "../mixins/pseudo.scss" as *;
+
+.portal {
+  margin-top: 4rem;
+  height: 500px;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  @include responsive(laptop) {
+    margin-top: -2rem;
+    flex-direction: row-reverse;
+    height: auto;
+  }
+
+  &__image {
+    margin-top: -6.2rem;
+    background-image: url("/assets/images/bg-intro-mobile.svg");
+    background-size: cover;
+    @include responsive(laptop) {
+      margin-top: -3rem;
+      background-image: url("/assets/images/bg-intro-desktop.svg");
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    @include responsive(laptop) {
+      align-items: start;
+      position: relative;
+      left: -7rem;
+      width: 420px;
+      text-align: start;
+    }
+  }
+  &__title {
+    font-weight: lighter;
+    font-size: 2.8rem;
+    color: #2d314d;
+  }
+  &__text {
+    font-size: 1.1rem;
+    color: #9597a5;
+  }
+  &__button {
+    margin-top: 2.5rem;
+    padding: 0.7rem;
+    width: 163px;
+    height: 44px;
+    color: white;
+    font-weight: bold;
+    background-color: #33d35e;
+    border-radius: 5rem;
+    @include responsive(laptop) {
+      padding-left: 2rem;
+    }
+  }
+}
