@@ -78,18 +78,20 @@
 
 @media screen and (min-width: 600px) {
   .main-menu {
-    top: -3.6rem;
-    margin-left: 2.3rem;
-    width: 80%;
+    top: -3.9rem;
+    margin-left: 0;
+    width: 1440px;
     display: flex;
     flex-direction: row;
     justify-content: right;
+    padding-right: 10rem;
     align-items: none;
     gap: 2rem;
     font-weight: normal;
     background-image: none;
     background-color: transparent;
     height: 50px;
+    box-shadow: none;
   }
 }
 
