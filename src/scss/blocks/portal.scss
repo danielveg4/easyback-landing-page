@@ -55,7 +55,7 @@
     height: 44px;
     color: white;
     font-weight: bold;
-    background-color: #33d35e;
+    background: linear-gradient(45deg, #33D35E, #2AB6D9);
     border-radius: 5rem;
     @include responsive(laptop) {
       padding-left: 2rem;
